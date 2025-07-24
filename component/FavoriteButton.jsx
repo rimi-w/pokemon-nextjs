@@ -9,7 +9,7 @@ const FavoriteButton = ({ pokeId }) => {
     <>
       <button
         onClick={(e) => {
-          e.stopPropagation();
+          e.preventDefault();
           isFavorite ? setIsFavorite(false) : setIsFavorite(true);
         }}
       >

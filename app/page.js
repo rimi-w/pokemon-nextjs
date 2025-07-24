@@ -24,7 +24,7 @@ export default function Home() {
   if (!pokeData) return <div>Loading...</div>;
 
   return (
-    <div className="flex flex-wrap justify-center pt-[80px] m-auto">
+    <div className="flex flex-wrap justify-center pt-[130px] m-auto">
       {pokeData.map((poke) => (
         <Link href={`/detail/${poke.id}`}>
           <section
